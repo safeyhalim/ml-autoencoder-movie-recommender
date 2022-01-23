@@ -163,4 +163,5 @@ for id_user in range(nb_users):
         test_loss += np.sqrt(loss.data * mean_corrector)
         s += 1.
 print('Test loss: ' + str(test_loss / s)) # Our goal is to get a test loss that is below 1 star (means that a predicted movie rating is on average different from the actual rating by less than one star)
+# E.g. a test loss of 0.95 is less than 1, which means less than 1 star, so it's a good movie recommender
 
